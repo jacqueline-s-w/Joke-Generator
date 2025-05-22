@@ -1,0 +1,82 @@
+body {
+  background: radial-gradient(circle, rgba(251, 144, 63, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  /* animation: pulseBackground 6s ease-in-out infinite; */
+}
+
+h1 {
+  color: purple;
+  animation: pulseHeins 4s ease-in-out infinite;
+}
+
+/* button {
+  background: rgba(105, 24, 226, 0.679);
+  border: 2px solid rgb(105, 6, 6);
+  border-radius: 5%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  animation: float 3s ease-in-out infinite;
+} */
+ button {
+  background: linear-gradient(to bottom, rgba(105, 24, 226, 0.9), rgba(85, 0, 180, 0.9));
+  border: 2px solid rgb(105, 6, 6);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 -2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+
+#joke {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.135);
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  height: fit-content;
+  width: max-content;
+}
+
+@keyframes pulseHeins {
+  0% {
+    text-shadow: 0 0 5px rgba(128, 0, 128, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(128, 0, 128, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(128, 0, 128, 0.4);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

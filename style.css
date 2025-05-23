@@ -2,7 +2,7 @@ body {
   background: radial-gradient(circle, rgba(251, 144, 63, 1) 0%, rgba(252, 70, 107, 1) 100%);
   font-family: 'Comic Sans MS', cursive, sans-serif;
   text-align: center;
-  margin-top: 50px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
